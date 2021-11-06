@@ -1,0 +1,172 @@
+2021-11-05T02:37:49+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "gbt_enqueue_scripts" not found or invalid function name in D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#1 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\script-loader.php(2083): do_action('wp_enqueue_scri...')
+#3 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(303): wp_enqueue_scripts('')
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\general-template.php(3015): do_action('wp_head')
+#7 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome\header.php(12): wp_head()
+#8 D:\xampp\htdocs\wp-furniture-store\wp-includes\template.php(770): require_once('D:\\xampp\\htdocs...')
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\template.php(716): load_template('D:\\xampp\\htdocs...', true, Array)
+#10 D:\xampp\htdocs\wp-furniture-store\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\page.php(16): get_header()
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\wp-furniture-store\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#14 D:\xampp\htdocs\wp-furniture-store\index.php(17): require('D:\\xampp\\htdocs...')
+#15 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php on line 303
+
+2021-11-05T09:22:19+00:00 CRITICAL Uncaught Error: Call to undefined function uto_output_sidebar_categories_dropdown() in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php:25
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(356): uto_sidebar_categories_dropdown(Array, '', 'uto_sidebar_cat...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(uto_si...', 'do_shortcode_ta...', '<p>[uto_sidebar...')
+#3 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(305): do_shortcode('<p>[uto_sidebar...')
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(189): WP_Hook->apply_filters('<p>[uto_sidebar...', Array)
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:shortco...', Array, Object(WP_Widget_Block))
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#7 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets.php(1977): WP_Widget->display_callback(Array, Array)
+#8 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(630): wp_render_widget('block-12', 'shop-sidebar')
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(203): WP_REST_Widgets_Controller->prepare_item_for_response(Array, Object(WP_REST_Request))
+#10 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Widgets_Controller->create_item(Object(WP_REST_Request))
+#11 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1626): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widgets', Array, NULL)
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Server->serve_batch_request_v1(Object(WP_REST_Request))
+#13 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/batch/v1', Array, NULL)
+#14 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#15 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/batch/v1')
+#16 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#17 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#18 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#19 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#20 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp.php(750): WP->parse_request('')
+#21 D:\xampp\htdocs\wp-furniture-store\wp-includes\functions.php(1291): WP->main('')
+#22 D:\xampp\htdocs\wp-furniture-store\wp-blog-header.php(16): wp()
+#23 D:\xampp\htdocs\wp-furniture-store\index.php(17): require('D:\\xampp\\htdocs...')
+#24 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php on line 25
+
+2021-11-05T09:22:25+00:00 CRITICAL Uncaught Error: Call to undefined function uto_output_sidebar_categories_dropdown() in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php:25
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(356): uto_sidebar_categories_dropdown(Array, '', 'uto_sidebar_cat...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(uto_si...', 'do_shortcode_ta...', '<p>[uto_sidebar...')
+#3 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(305): do_shortcode('<p>[uto_sidebar...')
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(189): WP_Hook->apply_filters('<p>[uto_sidebar...', Array)
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:shortco...', Array, Object(WP_Widget_Block))
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#7 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets.php(1977): WP_Widget->display_callback(Array, Array)
+#8 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(630): wp_render_widget('block-13', 'shop-sidebar')
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(203): WP_REST_Widgets_Controller->prepare_item_for_response(Array, Object(WP_REST_Request))
+#10 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Widgets_Controller->create_item(Object(WP_REST_Request))
+#11 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1626): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widgets', Array, NULL)
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Server->serve_batch_request_v1(Object(WP_REST_Request))
+#13 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/batch/v1', Array, NULL)
+#14 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#15 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/batch/v1')
+#16 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#17 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#18 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#19 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#20 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp.php(750): WP->parse_request('')
+#21 D:\xampp\htdocs\wp-furniture-store\wp-includes\functions.php(1291): WP->main('')
+#22 D:\xampp\htdocs\wp-furniture-store\wp-blog-header.php(16): wp()
+#23 D:\xampp\htdocs\wp-furniture-store\index.php(17): require('D:\\xampp\\htdocs...')
+#24 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php on line 25
+
+2021-11-05T09:22:38+00:00 CRITICAL Uncaught Error: Call to undefined function uto_output_sidebar_categories_dropdown() in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php:25
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(356): uto_sidebar_categories_dropdown(Array, '', 'uto_sidebar_cat...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(uto_si...', 'do_shortcode_ta...', '<p>[uto_sidebar...')
+#3 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(305): do_shortcode('<p>[uto_sidebar...')
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(189): WP_Hook->apply_filters('<p>[uto_sidebar...', Array)
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:shortco...', Array, Object(WP_Widget_Block))
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#7 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets.php(831): WP_Widget->display_callback(Array, Array)
+#8 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome\woocommerce\layouts\category.php(7): dynamic_sidebar('shop-sidebar')
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\template.php(772): require('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\wp-furniture-store\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\xampp\\htdocs...', false)
+#11 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome\woocommerce\archive-product.php(27): wc_get_template_part('layouts/categor...', 'left-sidebar')
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\wp-furniture-store\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#14 D:\xampp\htdocs\wp-furniture-store\index.php(17): require('D:\\xampp\\htdocs...')
+#15 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php on line 25
+
+2021-11-05T09:22:44+00:00 CRITICAL Uncaught Error: Call to undefined function uto_output_sidebar_categories_dropdown() in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php:25
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(356): uto_sidebar_categories_dropdown(Array, '', 'uto_sidebar_cat...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(uto_si...', 'do_shortcode_ta...', '<p>[uto_sidebar...')
+#3 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(305): do_shortcode('<p>[uto_sidebar...')
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(189): WP_Hook->apply_filters('<p>[uto_sidebar...', Array)
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:shortco...', Array, Object(WP_Widget_Block))
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#7 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets.php(831): WP_Widget->display_callback(Array, Array)
+#8 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome\woocommerce\layouts\category.php(7): dynamic_sidebar('shop-sidebar')
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\template.php(772): require('D:\\xampp\\htdocs...')
+#10 D:\xampp\htdocs\wp-furniture-store\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\xampp\\htdocs...', false)
+#11 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome\woocommerce\archive-product.php(27): wc_get_template_part('layouts/categor...', 'left-sidebar')
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\template-loader.php(106): include('D:\\xampp\\htdocs...')
+#13 D:\xampp\htdocs\wp-furniture-store\wp-blog-header.php(19): require_once('D:\\xampp\\htdocs...')
+#14 D:\xampp\htdocs\wp-furniture-store\index.php(17): require('D:\\xampp\\htdocs...')
+#15 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php on line 25
+
+2021-11-05T09:23:27+00:00 CRITICAL Uncaught Error: Call to undefined function uto_output_sidebar_categories_dropdown() in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php:25
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(356): uto_sidebar_categories_dropdown(Array, '', 'uto_sidebar_cat...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(uto_si...', 'do_shortcode_ta...', '<p>[uto_sidebar...')
+#3 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(305): do_shortcode('<p>[uto_sidebar...')
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(189): WP_Hook->apply_filters('<p>[uto_sidebar...', Array)
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:shortco...', Array, Object(WP_Widget_Block))
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#7 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets.php(1977): WP_Widget->display_callback(Array, Array)
+#8 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(630): wp_render_widget('block-14', 'shop-sidebar')
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(203): WP_REST_Widgets_Controller->prepare_item_for_response(Array, Object(WP_REST_Request))
+#10 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Widgets_Controller->create_item(Object(WP_REST_Request))
+#11 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1626): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widgets', Array, NULL)
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Server->serve_batch_request_v1(Object(WP_REST_Request))
+#13 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/batch/v1', Array, NULL)
+#14 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#15 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/batch/v1')
+#16 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#17 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#18 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#19 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#20 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp.php(750): WP->parse_request('')
+#21 D:\xampp\htdocs\wp-furniture-store\wp-includes\functions.php(1291): WP->main('')
+#22 D:\xampp\htdocs\wp-furniture-store\wp-blog-header.php(16): wp()
+#23 D:\xampp\htdocs\wp-furniture-store\index.php(17): require('D:\\xampp\\htdocs...')
+#24 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php on line 25
+
+2021-11-05T09:25:02+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + string in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\template-functions.php:37
+Stack trace:
+#0 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\template-functions.php(15): uto_recursive_output_categories_menu_item(Array, Object(WP_Term), ' <ul class="ul-...')
+#1 D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\shortcode.php(25): uto_output_sidebar_categories_dropdown('product_cat')
+#2 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(356): uto_sidebar_categories_dropdown(Array, '', 'uto_sidebar_cat...')
+#3 [internal function]: do_shortcode_tag(Array)
+#4 D:\xampp\htdocs\wp-furniture-store\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(uto_si...', 'do_shortcode_ta...', '<p>[uto_sidebar...')
+#5 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-hook.php(305): do_shortcode('<p>[uto_sidebar...')
+#6 D:\xampp\htdocs\wp-furniture-store\wp-includes\plugin.php(189): WP_Hook->apply_filters('<p>[uto_sidebar...', Array)
+#7 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets\class-wp-widget-block.php(81): apply_filters('widget_block_co...', '<!-- wp:shortco...', Array, Object(WP_Widget_Block))
+#8 D:\xampp\htdocs\wp-furniture-store\wp-includes\class-wp-widget.php(393): WP_Widget_Block->widget(Array, Array)
+#9 D:\xampp\htdocs\wp-furniture-store\wp-includes\widgets.php(1977): WP_Widget->display_callback(Array, Array)
+#10 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(630): wp_render_widget('block-12', 'shop-sidebar')
+#11 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\endpoints\class-wp-rest-widgets-controller.php(122): WP_REST_Widgets_Controller->prepare_item_for_response(Array, Object(WP_REST_Request))
+#12 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Widgets_Controller->get_items(Object(WP_REST_Request))
+#13 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/widgets', Array, NULL)
+#14 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api.php(495): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#15 D:\xampp\htdocs\wp-furniture-store\wp-includes\rest-api.php(2832): rest_do_request(Object(WP_REST_Request))
+#16 [internal function]: rest_preload_api_request(Array, '/wp/v2/widgets?...')
+#17 D:\xampp\htdocs\wp-furniture-store\wp-includes\block-editor.php(444): array_reduce(Array, 'rest_preload_ap...', Array)
+#18 D:\xampp\htdocs\wp-furniture-store\wp-admin\widgets-form-blocks.php(25): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#19 D:\xampp\htdocs\wp-furniture-store\wp-admin\widgets.php(31): require('D:\\xampp\\htdocs...')
+#20 {main}
+  thrown in D:\xampp\htdocs\wp-furniture-store\wp-content\themes\flatsome-child-sun-max\inc\template-functions.php on line 37
+

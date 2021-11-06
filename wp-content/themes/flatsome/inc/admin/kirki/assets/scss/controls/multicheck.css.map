@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,IAFA,CACF,mCAAmC,CACjC,KAAK,CAAA,AAAA,IAAC,CAAK,UAAU,AAAf,EAAiB;EACrB,MAAM,EAAE,UAAU;CAMnB;;AATL,AAKQ,IALJ,CACF,mCAAmC,CACjC,KAAK,CAAA,AAAA,IAAC,CAAK,UAAU,AAAf,CAEH,QAAQ,AACN,OAAO,CAAC;EACP,IAAI,EAAE,GAAG;CACV",
+    "sources": [
+        "multicheck.scss"
+    ],
+    "names": [],
+    "file": "multicheck.css"
+}

@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/*
+Theme Name: Sunmax - Flatsome Child Theme
+Description: Web nội thất thương mại điện tử
+Author: Van Huu
+Template: flatsome
+Version: 0.1
+*/
+@import url("../flatsome/style.css");
+:root {
+  --color-h2l2: #F62E3F;
+  --color-secondary: #2E3553;
+}
+
+.txt-h2l2 {
+  color: var(--color-h2l2) !important;
+}
+
+.bg-h2l2 {
+  color: var(--color-h2l2) !important;
+}
+
+.txt-sec {
+  color: var(--color-secondary) !important;
+}
+
+.bg-sec {
+  background-color: var(--color-secondary) !important;
+}
+
+.post-tag {
+  background-color: #e5e5e5;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+/* Styles */
+header .header_logo {
+  padding: 8px;
+}
+
+header .searchform {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .searchform input {
+  border-radius: 0px;
+  width: 100%;
+}
+
+.section .uto-section-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section .uto-section-heading::after {
+  display: block;
+  content: '';
+  width: 80px;
+  max-width: 80%;
+  height: 4px;
+  margin-top: 10px;
+  background-color: var(--color-secondary);
+}
+
+.product-small .badge-container {
+  margin: 0px !important;
+}
+
+.product-small .badge-container .badge .on-sale {
+  border-radius: 0px !important;
+}
+
+.product-small .box-image .image-fade_in_back a {
+  width: 247px;
+  height: 247px;
+}
+
+.product-small .box-image .image-fade_in_back a img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.home-testimonials .testimonials .img img {
+  border-radius: 10rem !important;
+}
+
+.custom-footer-col {
+  color: white;
+  padding: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.custom-footer-col .footer-heading {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.custom-footer-col .footer-heading::after {
+  display: block;
+  content: '';
+  width: 80px;
+  max-width: 80%;
+  height: 4px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.custom-footer-col .footer-link {
+  color: white;
+  opacity: .7;
+}
+
+.custom-footer-col .footer-link:hover {
+  opacity: 1;
+}
+
+.custom-footer-col br {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  section.section {
+    padding: 1rem;
+  }
+}
+
+.sidebar-categories-dropdown ul {
+  border-left: none !important;
+}
+
+.sidebar-categories-dropdown .categories__item {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: unset;
+}
+
+.sidebar-categories-dropdown .categories__item:last-of-type {
+  border-bottom: none;
+}
+
+.sidebar-categories-dropdown .categories__item a {
+  color: black;
+  padding: 10px 0;
+}
+
+.sidebar-categories-dropdown .categories__item .categories__item {
+  margin-left: 1rem;
+}
+
+/* Shop */
+#shop-sidebar .wc-block-product-search.wp-block-woocommerce-product-search form .wc-block-product-search__fields .wc-block-product-search__button {
+  padding: 0 !important;
+  height: 100%;
+  width: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Hide the footer */
+.absolute-footer {
+  display: none;
+}
+
+/* Fix breadcrumb */
+.woocommerce-breadcrumb.breadcrumbs {
+  width: 90vw;
+  max-width: 500px;
+}
+
+/* Fix Nav Dropdown wordwrap*/
+.nav-dropdown a {
+  white-space: nowrap;
+}
+
+/* Hide Single Product Sidebar */
+#product-sidebar {
+  display: none;
+}
+
+/* Contact Form */
+.contact-form form {
+  width: 400px;
+  max-width: 100%;
+  -webkit-box-shadow: 0px 0px 15px #dfdfdf;
+          box-shadow: 0px 0px 15px #dfdfdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form form input, .contact-form form textarea {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid #e5e5e5;
+  margin-bottom: 4px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.contact-form form input:first-of-type, .contact-form form textarea:first-of-type {
+  margin-top: 0px;
+}
+
+.contact-form form input:last-of-type, .contact-form form textarea:last-of-type {
+  margin-top: 20px;
+}
+
+.contact-form form input:focus, .contact-form form textarea:focus {
+  border-color: var(--color-h2l2);
+}
+
+.contact-form form button[type="submit"] {
+  padding: 10px;
+  background-color: var(--color-h2l2);
+  color: white;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
